@@ -1,0 +1,14 @@
+/* homepage.css */
+.homepage {
+    text-align: center;
+    /* font-size: 240px !important;  */
+}
+
+.centered-div {
+    font-size: 6rem !important; /* Adjust as needed */
+    margin: 0 auto;
+    min-width: 90%; 
+    padding: 20px;
+    font-weight: bold;
+    color: #000; /* Light grey color */
+}

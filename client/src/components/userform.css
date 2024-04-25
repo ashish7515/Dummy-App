@@ -1,0 +1,127 @@
+/* Overall Styles */
+body {
+    font-family:Arial, sans-serif; 
+    background-image: url("https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 3% auto;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the dropdown arrow */
+  .form-group select::-ms-expand {
+    display: none;
+  }
+  
+  .form-group select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%238b8b8b" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+
+
+/* Form Container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* White with opacity */
+    backdrop-filter: blur(1px); /* Apply blur effect */
+    padding: 4rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 40rem; 
+    animation: fadeInUp 0.8s ease-in-out forwards; /* Fade in with upward slide */
+}
+
+/* Form Title, Labels, and Input Fields */
+.form-container h2,
+.form-group label,
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="radio"] {
+    font-family: 'Dancing Script', cursive; /* Stylish font for username/password */
+}
+
+/* Form Title */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; 
+    animation: fadeIn 0.5s ease-in-out forwards; /* Simple fade in */
+}
+
+/* Input Fields */
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%; 
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 15px; /* Increased gap between input fields */
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1); /* Focus effect */ 
+}
+
+/* Username Input (Additional Styles) */
+.form-group input[type="text"] {
+   
+}
+
+/* Radio Buttons */
+.form-group input[type="radio"] {
+    margin-right: 5px; /* Add some margin for better spacing */
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Radio Button Labels */
+.form-group label {
+    display: block; /* Ensure labels appear on separate lines */
+    margin-bottom: 5px; 
+}
+
+/* Gradient Buttons */
+button[type="submit"],
+button[type="reset"] {
+    
+    background: linear-gradient(to right, #667eea, #764ba2); 
+    color: white;
+    margin-top: 2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    margin-right: 10px; /* Add space between buttons */
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    transform: translateY(-3px); /* Subtle upward movement on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Button lift effect */ 
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

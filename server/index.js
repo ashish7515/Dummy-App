@@ -8,7 +8,7 @@ const port = 3001;
 // Your MongoDB connection URI
 
 
-const mongoURI = 'mongodb+srv://iamashish1125:Ashish123@cluster0.ugximo6.mongodb.net/';
+const mongoURI = 'mongodb+srv://<username>:<password>@cluster0.ugximo6.mongodb.net/';
 
 
 // Connect to MongoDB
